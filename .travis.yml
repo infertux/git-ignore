@@ -4,7 +4,7 @@ sudo: false
 
 env:
    - COVERAGE=no
-   - COVERAGE=yes COV_PROGRAM="bashcov -r coveralls:Coveralls::SimpleCov::Formatter -r codecov:SimpleCov::Formatter::Codecov -r codeclimate-test-reporter:CodeClimate::TestReporter::Formatter --" 
+   - COVERAGE=yes COV_PROGRAM="bashcov --"
 before_script:
    - git clone https://github.com/albfan/bashcov.git
    - cd bashcov/
